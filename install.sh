@@ -15,6 +15,14 @@ setupPath() {
     esac
 }
 
+
+installFiles(){
+
+    mv scripts/* ~/.bin
+
+}
+
+
 setup() {
     local bin_dir="$HOME/.bin"
 
@@ -25,6 +33,8 @@ setup() {
 
     setupPath
     echo "Done! Restart your shell or run: source ~/.${SHELL##*/}rc"
+
+    # installFiles
 }
 
 setup
