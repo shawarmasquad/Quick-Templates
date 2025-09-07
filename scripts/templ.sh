@@ -1,5 +1,10 @@
 #!/bin/bash
 
+setupPath(){
+    # export PATH="PATH:"
+   
+}
+
 setup() {
     local bin_dir="$HOME/.bin"
     
